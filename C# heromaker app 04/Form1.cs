@@ -23,6 +23,9 @@ using System.Windows.Forms;
 
 // Radio button x4, groupbox(Preferred Transport), radio button x4(rdo prefix)(JetPack:Property->Checked->True,
 
+//----------------- C# heromaker app 04 How to use scrollbars in Winforms -----------------------------------
+//ref link:https://www.youtube.com/watch?v=dKXTx0swVUU&list=PLhPyEFL5u-i2w2fa7ErcbkbEkjqLh7Io1&index=13
+
 namespace HeroMaker
 {
     public partial class Form1 : Form
