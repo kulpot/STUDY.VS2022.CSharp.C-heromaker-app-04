@@ -8,7 +8,22 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace C__heromaker_app_04
+//------------------ C# avatar maker app 01 How to use checkboxes tutorial -----------------------------
+//ref link:https://www.youtube.com/watch?v=UgbzxnlckxY&list=PLhPyEFL5u-i2w2fa7ErcbkbEkjqLh7Io1&index=15
+
+// label(Hero's Name), textbox(MessageBox), groupbox, checkbox x8(abilities[0-7], button(btn_create), status_message
+
+//----------------- C# avatar maker app 02 How to use a listbox tutorial -------------------------------
+//ref link:https://www.youtube.com/watch?v=ihBNF1j5qNU&list=PLhPyEFL5u-i2w2fa7ErcbkbEkjqLh7Io1&index=14
+
+// listbox(Item Collection)(SelectionMode:MultiSimple), label(Office Locations)
+
+//----------------- C# avatar maker app 03 How to use radio buttons tutorial ------------------------------
+//ref link:https://www.youtube.com/watch?v=0Byuvm4acFM&list=PLhPyEFL5u-i2w2fa7ErcbkbEkjqLh7Io1&index=14
+
+// Radio button x4, groupbox(Preferred Transport), radio button x4(rdo prefix)(JetPack:Property->Checked->True,
+
+namespace HeroMaker
 {
     public partial class Form1 : Form
     {
@@ -16,5 +31,92 @@ namespace C__heromaker_app_04
         {
             InitializeComponent();
         }
+
+        //------START---------- C# avatar maker app 01 How to use checkboxes tutorial -----------------------------
+
+        private void btn_create_Click(object sender, EventArgs e)
+        {
+            bool[] abilities = {false, false, false, false, false, false, false, false };
+
+            abilities[0] = chk_fly.Checked;
+            abilities[1] = chk_xray.Checked;
+            abilities[2] = chk_invisible.Checked;
+            abilities[3] = chk_energy.Checked;
+            abilities[4] = chk_luck.Checked;
+            abilities[5] = chk_fart.Checked;
+            abilities[6] = chk_water_breath.Checked;
+            abilities[7] = chk_timecontrol.Checked;
+
+            //----START--------- C# avatar maker app 02 How to use a listbox tutorial -------------------------------
+            // listbox
+            // cities
+            // array or list?
+            List<String> cities = new List<String>();
+
+            // add the selected items to cities
+            foreach(String s in lst_cities.SelectedItems)
+            {
+                cities.Add(s);
+            }
+            //-----END---------- C# avatar maker app 02 How to use a listbox tutorial -------------------------------
+
+            //-----START---------- C# avatar maker app 03 How to use radio buttons tutorial ------------------------------
+            // preferred transport
+            // use a single string since only one mode can be the preferred transport.
+
+            string preferred_transport = " ";
+
+            if (rdo_jetpack.Checked)
+                preferred_transport = "Jet Pack";
+            if (rdo_landspeeder.Checked)
+                preferred_transport = "Land Speeder";
+            if (rdo_teleport.Checked)
+                preferred_transport = "Teleport";
+            if (rdo_batmobile.Checked)
+                preferred_transport = "Batmobile";
+            //------END--------- C# avatar maker app 03 How to use radio buttons tutorial ------------------------------
+
+            //------START---------- C# avatar maker app 01 How to use checkboxes tutorial -----------------------------
+            string status_message = "Your new hero is " + txt_name.Text + 
+                " You have selected the following abilities: ";
+
+            if (abilities[0])
+                status_message += "Fly, ";
+            if (abilities[1])
+                status_message += "xRay Vision, ";
+            if (abilities[2])
+                status_message += "Invisibility, ";
+            if (abilities[3])
+                status_message += "Absorb Energy, ";
+            if (abilities[4])
+                status_message += "Extreme Luck, ";
+            if (abilities[5])
+                status_message += "Explosive Farts, ";
+            if (abilities[6])
+                status_message += "Water Breathing, ";
+            if (abilities[7])
+                status_message += "Time Control, ";
+            //------END---------- C# avatar maker app 01 How to use checkboxes tutorial -----------------------------
+
+            //----START--------- C# avatar maker app 02 How to use a listbox tutorial -------------------------------
+            //listbox
+            status_message += "The hero works in these cities: "; 
+            foreach(String city in cities)
+            {
+                status_message += city + ", ";
+            }
+            //-----END---------- C# avatar maker app 02 How to use a listbox tutorial -------------------------------
+
+            //-----START---------- C# avatar maker app 03 How to use radio buttons tutorial ------------------------------
+
+            status_message += " Your hero prefers to travel by " + preferred_transport;
+
+            //-----END---------- C# avatar maker app 03 How to use radio buttons tutorial ------------------------------
+           
+            //------START---------- C# avatar maker app 01 How to use checkboxes tutorial -----------------------------
+            MessageBox.Show(status_message);
+            //------END---------- C# avatar maker app 01 How to use checkboxes tutorial -----------------------------
+        }
+        //------END---------- C# avatar maker app 01 How to use checkboxes tutorial -----------------------------
     }
 }
