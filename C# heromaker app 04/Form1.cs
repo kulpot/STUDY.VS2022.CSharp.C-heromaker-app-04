@@ -26,7 +26,7 @@ using System.Windows.Forms;
 //----------------- C# heromaker app 04 How to use scrollbars in Winforms -----------------------------------
 //ref link:https://www.youtube.com/watch?v=dKXTx0swVUU&list=PLhPyEFL5u-i2w2fa7ErcbkbEkjqLh7Io1&index=13
 
-// Scroolbars(LimitSpedd+Stamina+Strength to a maximum of 100totalPts, GroupBox(Speed-Stamina-Strength), HScrollBar x3(width300height15), trackBar,
+// Scroolbars(LimitSpedd+Stamina+Strength to a maximum of 100totalPts, GroupBox(Speed-Stamina-Strength), HScrollBar x3(width300height15),label x6(Speed/Stamina/Strength/lbl_speed/stamina/strenght), trackBar,
 
 namespace HeroMaker
 {
@@ -121,6 +121,11 @@ namespace HeroMaker
             //------START---------- C# avatar maker app 01 How to use checkboxes tutorial -----------------------------
             MessageBox.Show(status_message);
             //------END---------- C# avatar maker app 01 How to use checkboxes tutorial -----------------------------
+        }
+
+        private void scroll_speed_Scroll(object sender, ScrollEventArgs e)
+        {
+
         }
         //------END---------- C# avatar maker app 01 How to use checkboxes tutorial -----------------------------
     }
