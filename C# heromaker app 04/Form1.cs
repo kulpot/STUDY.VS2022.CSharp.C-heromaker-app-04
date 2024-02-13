@@ -81,8 +81,20 @@ namespace HeroMaker
                 preferred_transport = "Batmobile";
             //------END--------- C# avatar maker app 03 How to use radio buttons tutorial ------------------------------
 
+            //-----START---------- C# heromaker app 04 How to use scrollbars in Winforms -----------------------------------
+
+            int speed = scroll_speed.Value;
+            int stamina = scroll_stamina.Value;
+            int strength = scroll_strength.Value;
+            if(speed + stamina + strength > 100)
+            {
+                MessageBox.Show("You cannot have more than 100 total points for speed, stamina, strength");
+            }
+
+            //-------END-------- C# heromaker app 04 How to use scrollbars in Winforms -----------------------------------
+
             //------START---------- C# avatar maker app 01 How to use checkboxes tutorial -----------------------------
-            string status_message = "Your new hero is " + txt_name.Text + 
+            string status_message = "Your new hero is " + txt_name.Text + "." +
                 " You have selected the following abilities: ";
 
             if (abilities[0])
@@ -113,20 +125,37 @@ namespace HeroMaker
             //-----END---------- C# avatar maker app 02 How to use a listbox tutorial -------------------------------
 
             //-----START---------- C# avatar maker app 03 How to use radio buttons tutorial ------------------------------
-
-            status_message += " Your hero prefers to travel by " + preferred_transport;
-
+            status_message += " Your hero prefers to travel by " + preferred_transport + ".";
             //-----END---------- C# avatar maker app 03 How to use radio buttons tutorial ------------------------------
-           
+
+            //-----START---------- C# heromaker app 04 How to use scrollbars in Winforms -----------------------------------
+            status_message += " Speed: " + speed + " Stamina: " + stamina + " Strength: " + strength + ".";
+            //-----END---------- C# heromaker app 04 How to use scrollbars in Winforms -----------------------------------
+
             //------START---------- C# avatar maker app 01 How to use checkboxes tutorial -----------------------------
             MessageBox.Show(status_message);
             //------END---------- C# avatar maker app 01 How to use checkboxes tutorial -----------------------------
         }
 
+        //--------START------- C# heromaker app 04 How to use scrollbars in Winforms -----------------------------------
+
         private void scroll_speed_Scroll(object sender, ScrollEventArgs e)
         {
-
+            lbl_speed.Text = scroll_speed.Value.ToString();
         }
+
+        private void scroll_stamina_Scroll(object sender, ScrollEventArgs e)
+        {
+            lbl_stamina.Text = scroll_stamina.Value.ToString();
+        }
+
+        private void scroll_strength_Scroll(object sender, ScrollEventArgs e)
+        {
+            lbl_strength.Text = scroll_strength.Value.ToString();
+        }
+
+        //------END--------- C# heromaker app 04 How to use scrollbars in Winforms -----------------------------------
+
         //------END---------- C# avatar maker app 01 How to use checkboxes tutorial -----------------------------
     }
 }

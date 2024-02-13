@@ -311,6 +311,7 @@
             this.scroll_stamina.Name = "scroll_stamina";
             this.scroll_stamina.Size = new System.Drawing.Size(300, 15);
             this.scroll_stamina.TabIndex = 1;
+            this.scroll_stamina.Scroll += new System.Windows.Forms.ScrollEventHandler(this.scroll_stamina_Scroll);
             // 
             // scroll_strength
             // 
@@ -318,6 +319,7 @@
             this.scroll_strength.Name = "scroll_strength";
             this.scroll_strength.Size = new System.Drawing.Size(300, 15);
             this.scroll_strength.TabIndex = 2;
+            this.scroll_strength.Scroll += new System.Windows.Forms.ScrollEventHandler(this.scroll_strength_Scroll);
             // 
             // label3
             // 
