@@ -48,8 +48,14 @@
             this.rdo_landspeeder = new System.Windows.Forms.RadioButton();
             this.rdo_jetpack = new System.Windows.Forms.RadioButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.hScrollBar1 = new System.Windows.Forms.HScrollBar();
+            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.hScrollBar2 = new System.Windows.Forms.HScrollBar();
+            this.hScrollBar3 = new System.Windows.Forms.HScrollBar();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -262,6 +268,9 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.hScrollBar3);
+            this.groupBox3.Controls.Add(this.hScrollBar2);
+            this.groupBox3.Controls.Add(this.hScrollBar1);
             this.groupBox3.Location = new System.Drawing.Point(15, 278);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(326, 150);
@@ -269,11 +278,40 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Speed-Stamina-Strength";
             // 
+            // hScrollBar1
+            // 
+            this.hScrollBar1.Location = new System.Drawing.Point(7, 38);
+            this.hScrollBar1.Name = "hScrollBar1";
+            this.hScrollBar1.Size = new System.Drawing.Size(300, 15);
+            this.hScrollBar1.TabIndex = 0;
+            // 
+            // trackBar1
+            // 
+            this.trackBar1.Location = new System.Drawing.Point(456, 113);
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.Size = new System.Drawing.Size(104, 45);
+            this.trackBar1.TabIndex = 1;
+            // 
+            // hScrollBar2
+            // 
+            this.hScrollBar2.Location = new System.Drawing.Point(7, 66);
+            this.hScrollBar2.Name = "hScrollBar2";
+            this.hScrollBar2.Size = new System.Drawing.Size(300, 15);
+            this.hScrollBar2.TabIndex = 1;
+            // 
+            // hScrollBar3
+            // 
+            this.hScrollBar3.Location = new System.Drawing.Point(7, 101);
+            this.hScrollBar3.Name = "hScrollBar3";
+            this.hScrollBar3.Size = new System.Drawing.Size(300, 15);
+            this.hScrollBar3.TabIndex = 2;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.trackBar1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label2);
@@ -288,6 +326,8 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -315,6 +355,10 @@
         private System.Windows.Forms.RadioButton rdo_landspeeder;
         private System.Windows.Forms.RadioButton rdo_jetpack;
         private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.HScrollBar hScrollBar1;
+        private System.Windows.Forms.TrackBar trackBar1;
+        private System.Windows.Forms.HScrollBar hScrollBar3;
+        private System.Windows.Forms.HScrollBar hScrollBar2;
     }
 }
 
