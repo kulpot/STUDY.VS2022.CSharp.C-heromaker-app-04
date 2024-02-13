@@ -26,7 +26,7 @@ using System.Windows.Forms;
 //----------------- C# heromaker app 04 How to use scrollbars in Winforms -----------------------------------
 //ref link:https://www.youtube.com/watch?v=dKXTx0swVUU&list=PLhPyEFL5u-i2w2fa7ErcbkbEkjqLh7Io1&index=13
 
-// Scroolbars(LimitSpedd+Stamina+Strength to a maximum of 100totalPts,
+// Scroolbars(LimitSpedd+Stamina+Strength to a maximum of 100totalPts, GroupBox(Speed-Stamina-Strength)
 
 namespace HeroMaker
 {

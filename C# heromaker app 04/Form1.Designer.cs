@@ -31,8 +31,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txt_name = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lst_cities = new System.Windows.Forms.ListBox();
             this.chk_energy = new System.Windows.Forms.CheckBox();
             this.chk_luck = new System.Windows.Forms.CheckBox();
             this.chk_fart = new System.Windows.Forms.CheckBox();
@@ -41,12 +39,15 @@
             this.chk_invisible = new System.Windows.Forms.CheckBox();
             this.chk_xray = new System.Windows.Forms.CheckBox();
             this.chk_fly = new System.Windows.Forms.CheckBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lst_cities = new System.Windows.Forms.ListBox();
             this.btn_create = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.rdo_jetpack = new System.Windows.Forms.RadioButton();
-            this.rdo_landspeeder = new System.Windows.Forms.RadioButton();
-            this.rdo_teleport = new System.Windows.Forms.RadioButton();
             this.rdo_batmobile = new System.Windows.Forms.RadioButton();
+            this.rdo_teleport = new System.Windows.Forms.RadioButton();
+            this.rdo_landspeeder = new System.Windows.Forms.RadioButton();
+            this.rdo_jetpack = new System.Windows.Forms.RadioButton();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -83,33 +84,6 @@
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Special Abilities";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(18, 161);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 13);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Office Locations";
-            // 
-            // lst_cities
-            // 
-            this.lst_cities.FormattingEnabled = true;
-            this.lst_cities.Items.AddRange(new object[] {
-            "Moscow",
-            "New York",
-            "London",
-            "Paris",
-            "Tokyo",
-            "Hong Kong",
-            "Rome",
-            "Sydney"});
-            this.lst_cities.Location = new System.Drawing.Point(14, 177);
-            this.lst_cities.Name = "lst_cities";
-            this.lst_cities.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
-            this.lst_cities.Size = new System.Drawing.Size(120, 95);
-            this.lst_cities.TabIndex = 4;
             // 
             // chk_energy
             // 
@@ -191,6 +165,33 @@
             this.chk_fly.Text = "Fly";
             this.chk_fly.UseVisualStyleBackColor = true;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(18, 161);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(84, 13);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Office Locations";
+            // 
+            // lst_cities
+            // 
+            this.lst_cities.FormattingEnabled = true;
+            this.lst_cities.Items.AddRange(new object[] {
+            "Moscow",
+            "New York",
+            "London",
+            "Paris",
+            "Tokyo",
+            "Hong Kong",
+            "Rome",
+            "Sydney"});
+            this.lst_cities.Location = new System.Drawing.Point(14, 177);
+            this.lst_cities.Name = "lst_cities";
+            this.lst_cities.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
+            this.lst_cities.Size = new System.Drawing.Size(120, 95);
+            this.lst_cities.TabIndex = 4;
+            // 
             // btn_create
             // 
             this.btn_create.Location = new System.Drawing.Point(690, 405);
@@ -214,28 +215,16 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Preferred Transport";
             // 
-            // rdo_jetpack
+            // rdo_batmobile
             // 
-            this.rdo_jetpack.AutoSize = true;
-            this.rdo_jetpack.Checked = true;
-            this.rdo_jetpack.Location = new System.Drawing.Point(6, 19);
-            this.rdo_jetpack.Name = "rdo_jetpack";
-            this.rdo_jetpack.Size = new System.Drawing.Size(64, 17);
-            this.rdo_jetpack.TabIndex = 0;
-            this.rdo_jetpack.TabStop = true;
-            this.rdo_jetpack.Text = "JetPack";
-            this.rdo_jetpack.UseVisualStyleBackColor = true;
-            // 
-            // rdo_landspeeder
-            // 
-            this.rdo_landspeeder.AutoSize = true;
-            this.rdo_landspeeder.Location = new System.Drawing.Point(6, 42);
-            this.rdo_landspeeder.Name = "rdo_landspeeder";
-            this.rdo_landspeeder.Size = new System.Drawing.Size(87, 17);
-            this.rdo_landspeeder.TabIndex = 1;
-            this.rdo_landspeeder.TabStop = true;
-            this.rdo_landspeeder.Text = "Landspeeder";
-            this.rdo_landspeeder.UseVisualStyleBackColor = true;
+            this.rdo_batmobile.AutoSize = true;
+            this.rdo_batmobile.Location = new System.Drawing.Point(6, 88);
+            this.rdo_batmobile.Name = "rdo_batmobile";
+            this.rdo_batmobile.Size = new System.Drawing.Size(71, 17);
+            this.rdo_batmobile.TabIndex = 3;
+            this.rdo_batmobile.TabStop = true;
+            this.rdo_batmobile.Text = "Batmobile";
+            this.rdo_batmobile.UseVisualStyleBackColor = true;
             // 
             // rdo_teleport
             // 
@@ -248,22 +237,44 @@
             this.rdo_teleport.Text = "Teleport";
             this.rdo_teleport.UseVisualStyleBackColor = true;
             // 
-            // rdo_batmobile
+            // rdo_landspeeder
             // 
-            this.rdo_batmobile.AutoSize = true;
-            this.rdo_batmobile.Location = new System.Drawing.Point(6, 88);
-            this.rdo_batmobile.Name = "rdo_batmobile";
-            this.rdo_batmobile.Size = new System.Drawing.Size(71, 17);
-            this.rdo_batmobile.TabIndex = 3;
-            this.rdo_batmobile.TabStop = true;
-            this.rdo_batmobile.Text = "Batmobile";
-            this.rdo_batmobile.UseVisualStyleBackColor = true;
+            this.rdo_landspeeder.AutoSize = true;
+            this.rdo_landspeeder.Location = new System.Drawing.Point(6, 42);
+            this.rdo_landspeeder.Name = "rdo_landspeeder";
+            this.rdo_landspeeder.Size = new System.Drawing.Size(87, 17);
+            this.rdo_landspeeder.TabIndex = 1;
+            this.rdo_landspeeder.TabStop = true;
+            this.rdo_landspeeder.Text = "Landspeeder";
+            this.rdo_landspeeder.UseVisualStyleBackColor = true;
+            // 
+            // rdo_jetpack
+            // 
+            this.rdo_jetpack.AutoSize = true;
+            this.rdo_jetpack.Checked = true;
+            this.rdo_jetpack.Location = new System.Drawing.Point(6, 19);
+            this.rdo_jetpack.Name = "rdo_jetpack";
+            this.rdo_jetpack.Size = new System.Drawing.Size(64, 17);
+            this.rdo_jetpack.TabIndex = 0;
+            this.rdo_jetpack.TabStop = true;
+            this.rdo_jetpack.Text = "JetPack";
+            this.rdo_jetpack.UseVisualStyleBackColor = true;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Location = new System.Drawing.Point(15, 278);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(326, 150);
+            this.groupBox3.TabIndex = 10;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Speed-Stamina-Strength";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btn_create);
@@ -303,6 +314,7 @@
         private System.Windows.Forms.RadioButton rdo_teleport;
         private System.Windows.Forms.RadioButton rdo_landspeeder;
         private System.Windows.Forms.RadioButton rdo_jetpack;
+        private System.Windows.Forms.GroupBox groupBox3;
     }
 }
 
