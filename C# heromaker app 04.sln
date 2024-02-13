@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C# heromaker app 04", "C# heromaker app 04\C# heromaker app 04.csproj", "{E4616756-4084-46EC-8238-2A88F7290069}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E4616756-4084-46EC-8238-2A88F7290069}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4616756-4084-46EC-8238-2A88F7290069}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4616756-4084-46EC-8238-2A88F7290069}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4616756-4084-46EC-8238-2A88F7290069}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {426BA238-C1FD-4ACF-B3AB-C7EC219B40DE}
+	EndGlobalSection
+EndGlobal
